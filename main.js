@@ -1,23 +1,3 @@
-function determineWeightOrPrice(unit){
-    if(unit == "Price"){
-        createForm("Enter the price ::");
-    }else{
-       createForm("Enter the Weight ::");
-    }
-   }
-   
-   function createForm(textToBeDisplayed){
-       const form=document.createElement('form');
-       form.setAttribute("id", "myForm");
-       const text=document.createTextNode(textToBeDisplayed);
-       const lineBreak=document.createElement('br');
-       document.body.appendChild(lineBreak);
-       document.body.appendChild(text);
-       document.body.appendChild(form);
-       const input=document.createElement("input");
-       input.setAttribute("type","text");
-       document.getElementById("myForm").appendChild(input);   
-   }
 
    function makeApiCall(){
     const unitValue = document.getElementById('unitvalue').value;
