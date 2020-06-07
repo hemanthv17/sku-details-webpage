@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="/design.css">
+<style>
+    body {
+      background-image: url('/images/backgroundimage.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: 100%;
+    }
+    </style>
+<script src="/main.js"></script>
+<h1 class="header"> SRI SAI SURYA SWAGRUGHA PICKLES </h1>
+<hr/>
+
+<div id="request" class="selection">
+    <h2>Enter The Information Below</h2>
+    <form>
+        Item Name ::
+        <input id="skuname" type="text"> 
+    </form>
+    <br/>
+    <label for="weightunit">
+        Choose The Unit ::       
+    </label>
+    <select name="unitname" id="unitname">
+        <option value="Choose">Choose An Option</option>
+        <option value="Price">Price In Rupees</option>
+        <option value="Weight">Weight In Grams</option>
+    </select>
+    <form>
+        <br/>
+        Enter The Value ::
+        <input id="unitvalue" type="text">   
+    </form>
+    <br/>
+    <button class="button" onclick="makeApiCall()">Submit</button>
+    <br/>
+    <br/>
+
+</div>
+<div id="response">
+
+</div>
+
+<body>
+
+</body>
+
+</html>
